@@ -1,73 +1,70 @@
-    # Build results
-    [Bb]in/
-    [Oo]bj/
+# Build results
+[Bb]in/
+[Oo]bj/
 
-    # IDE-specific files
-    .vs/
-    *.sln
-    *.suo
-    *.user
-    *.userosf
-    *.sln.docstates
-    *.vshost.*
-    *.opendb
-    *.opensdf
-    *.sdf
-    *.dbmdl
-    *.log
-    *.tlog
-    *.cache
-    *.VC.db
-    *.VC.opendb
-    *.VC.VC.db
-    *.VC.VC.opendb
-    *.VC.VC.tlog
-    *.VC.VC.log
-    *.VC.VC.cache
-    *.VC.VC.suo
-    *.VC.VC.user
-    *.VC.VC.userosf
-    *.VC.VC.sln.docstates
-    *.VC.VC.vshost.*
-    *.VC.VC.opendb
-    *.VC.VC.opensdf
-    *.VC.VC.sdf
-    *.VC.VC.dbmdl
-    *.VC.VC.log
-    *.VC.VC.tlog
-    *.VC.VC.cache
-    *.VC.VC.db
-    *.VC.VC.opendb
-    *.VC.VC.VC.db
-    *.VC.VC.VC.opendb
-    *.VC.VC.VC.tlog
-    *.VC.VC.VC.log
-    *.VC.VC.VC.cache
-    *.VC.VC.VC.suo
-    *.VC.VC.VC.user
-    *.VC.VC.VC.userosf
-    *.VC.VC.VC.sln.docstates
-    *.VC.VC.VC.vshost.*
-    *.VC.VC.VC.opendb
-    *.VC.VC.VC.opensdf
-    *.VC.VC.VC.sdf
-    *.VC.VC.VC.dbmdl
-    *.VC.VC.VC.log
-    *.VC.VC.VC.tlog
-    *.VC.VC.VC.cache
+# IDE-specific files
+.vs/
+*.sln
+*.suo
+*.user
+*.userosf
+*.sln.docstates
+*.vshost.*
+*.opendb
+*.opensdf
+*.sdf
+*.dbmdl
+*.log
+*.tlog
+*.cache
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.VC.tlog
+*.VC.VC.log
+*.VC.VC.cache
+*.VC.VC.suo
+*.VC.VC.user
+*.VC.VC.userosf
+*.VC.VC.sln.docstates
+*.VC.VC.vshost.*
+*.VC.VC.opendb
+*.VC.VC.opensdf
+*.VC.VC.sdf
+*.VC.VC.dbmdl
+*.VC.VC.log
+*.VC.VC.tlog
+*.VC.VC.cache
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.VC.VC.db
+*.VC.VC.VC.opendb
+*.VC.VC.VC.tlog
+*.VC.VC.VC.log
+*.VC.VC.VC.cache
+*.VC.VC.VC.suo
+*.VC.VC.VC.user
+*.VC.VC.VC.userosf
+*.VC.VC.VC.sln.docstates
+*.VC.VC.VC.vshost.*
+*.VC.VC.VC.opendb
+*.VC.VC.VC.opensdf
+*.VC.VC.VC.sdf
+*.VC.VC.VC.dbmdl
+*.VC.VC.VC.log
+*.VC.VC.VC.tlog
+*.VC.VC.VC.cache
 
-    # Package files
-    packages/
-    *.nupkg
-    *.snupkg
-    *.dll.config
+# Package files
+packages/
+*.nupkg
+*.snupkg
+*.dll.config
 
-    # DotNet CLI files
-    .dotnet/
-    .config/dotnet-tools.json
+# DotNet CLI files
+.dotnet/
+.config/dotnet-tools.json
 
-    # Editor-specific files (e.g., VS Code)
-    .vscode/
-
-    # User-specific settings
-    appsettings.Development.json
+# Editor-specific files (e.g., VS Code)
+.vscode/
