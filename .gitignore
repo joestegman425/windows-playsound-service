@@ -68,17 +68,3 @@ packages/
 
 # Editor-specific files (e.g., VS Code)
 .vscode/
-
-# User-specific settings
-obj/project.assets.json
-obj/project.nuget.cache
-obj/windows-playsound-service.csproj.nuget.dgspec.json
-obj/windows-playsound-service.csproj.nuget.g.props
-obj/windows-playsound-service.csproj.nuget.g.targets
-obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
-obj/Debug/net8.0/windows-playsound-service.AssemblyInfo.cs
-obj/Debug/net8.0/windows-playsound-service.AssemblyInfoInputs.cache
-obj/Debug/net8.0/windows-playsound-service.assets.cache
-obj/Debug/net8.0/windows-playsound-service.csproj.AssemblyReference.cache
-obj/Debug/net8.0/windows-playsound-service.GeneratedMSBuildEditorConfig.editorconfig
-obj/Debug/net8.0/windows-playsound-service.GlobalUsings.g.cs
