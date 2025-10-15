@@ -4,6 +4,7 @@
 
     # IDE-specific files
     .vs/
+    *.sln
     *.suo
     *.user
     *.userosf
