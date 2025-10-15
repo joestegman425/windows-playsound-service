@@ -3,7 +3,7 @@ namespace Windows.PlaySound.Service;
 using NAudio.CoreAudioApi;
 using NAudio.Wave;
 
-public static class PlaySound
+public static class Player
 {
   public static void PlayWav(string audioPath, string? deviceFriendlyName = null)
   {
