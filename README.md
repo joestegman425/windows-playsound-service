@@ -17,7 +17,7 @@ Debug and configiration data will be returned when a sound is ommitted:
 
 * http://localhost:[port]/playsound
 
-# Setup and Build
+# Setup
 
 Details on IIS and ASP.NET Core setup below. This information comes from [this link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-9.0&tabs=visual-studio).
 
@@ -29,16 +29,27 @@ Search (Windows Key) for and run "Turn Windows features on or off". If not insta
 
 The .NET 8.0 version can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.21-windows-hosting-bundle-installer).
 
-## Config
+## Create a New Site
 
-### appsettings.json
+* Create a folder for the site (e.g., C:/Sites/PlaysoundService)
+* Open IIS Manager and create a new site.
+  * Name the site PlaysoundService
+  * Name the application pool PlaysoundService
+  * Set the location to the folder created above
+  * Set the port to 5001 (or whatever you choose)
+  * Click on "Application Pools" -> "PlaysoundService":
+    * Right click "Set Application Pool Defaults" and set General->Start Mode to "AlwaysRunning".
+
+# Config
+
+## appsettings.json
 The appsetting.json file contains config data needed by the service. All service config is contained within the PlaySound section.
 
 * DeviceFriendlyName: Set this to play sound on the non-default device. http://localhost:[port]/playsound will return a device list.
 * WavFolder: The folder that contains the wav files.
 * Sounds:{name}: Maps a sound name from the GET request to a specific wav file.
 
-### appsettings.json Examples
+## appsettings.json example
 
 ```json
   {
@@ -52,8 +63,31 @@ The appsetting.json file contains config data needed by the service. All service
     }
   }
 ```
-
 In response to a GET http://localhost:[port]/playsound/arrive, the service will play "C:/Sounds/arrive.wav" on the output device with the friendly name "Speakers (TTGK Audio)".
+
+# Build and Test Locally
+
+Build:
+```
+dotnet buld
+```
+
+Run/Test
+```
+dotnet run
+```
+
+# Deploy
+
+Publish:
+```
+dotnet publish -c Release -o C:\Path\To\PublishFolder
+```
+
+Publish example. The path should be the location used when creating a new site in IIS manager above.
+```
+dotnet publish -c Release -o C:\Sites\PlaysoundService
+```
 
 # Contributing
 

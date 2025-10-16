@@ -36,7 +36,7 @@ public class Program
       sb.Append($"Wav Folder: {config[FOLDER_CONFIG]}\n");
       sb.Append($"Error Sound: {ERROR_WAV}\n");
       sb.Append("Audio Devices:\n");
-      foreach (string ad in Windows.PlaySound.Service.GetAudioDeviceNames())
+      foreach (string ad in Windows.PlaySound.Service.Player.GetAudioDeviceNames())
       {
         sb.Append($"  '{ad}'\n");
       }
@@ -64,7 +64,7 @@ public class Program
       if (!File.Exists(wavFile)) wavFile = ERROR_WAV;
 
       // Play sound
-      WindowsSound.PlaySound.PlayWav(wavFile, config[DEVICE_CONFIG]);
+      Windows.PlaySound.Service.Player.PlayWav(wavFile, config[DEVICE_CONFIG]);
 
       // Debug info
       await context.Response.WriteAsync($"playing: {wavFile}");
